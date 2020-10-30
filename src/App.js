@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Components
+import Greet from './components/Greet'
+import Counter from './components/Counter'
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +22,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <Greet name = "Aaron Barcenas"/>
+      <Greet name = "Gilberto Gonzalez"/>
+      <Greet name = "Carlos Gonzalez"/>
+      <Counter />
     </div>
   );
 }
