@@ -2,9 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 // Components
-//import Greet from './components/Greet'
-//import Counter from './components/Counter'
+import Greet from './components/Greet'
+import Counter from './components/Counter'
 import Koders from './components/Koders'
+import ToggleColor from './components/ToggleColor'
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Counter/>
       <Koders/>
+      <ToggleColor/>
     </div>
   );
 }

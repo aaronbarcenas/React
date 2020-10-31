@@ -52,8 +52,10 @@ class Counter extends Component {
     return (
     <div>
       <h1>Counter: {this.state.counter}</h1>
-      <button onClick={() => this.clickAddHandler()}>Add</button>
-      <button onClick={() => this.clickRestHandler()}>Rest</button>
+      {/*<button onClick={() => this.clickAddHandler()}>Add</button>
+      <button onClick={() => this.clickRestHandler()}>Rest</button>*/}
+      <button onClick={() => this.clickHandler('add')}>Add</button>
+      <button onClick={() => this.clickHandler('rest')}>Rest</button>
     </div>
     
     )
