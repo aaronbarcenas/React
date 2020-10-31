@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 // Components
-import Greet from './components/Greet'
-import Counter from './components/Counter'
+//import Greet from './components/Greet'
+//import Counter from './components/Counter'
+import Koders from './components/Koders'
 
 function App() {
   return (
@@ -22,10 +23,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Greet name = "Aaron Barcenas"/>
-      <Greet name = "Gilberto Gonzalez"/>
-      <Greet name = "Carlos Gonzalez"/>
-      <Counter />
+      <Koders/>
     </div>
   );
 }

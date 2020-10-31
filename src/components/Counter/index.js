@@ -20,7 +20,7 @@ class Counter extends Component {
   componentDidUpdate() {
     console.log("El componente se actualizo")
   }
-
+/*
   clickAddHandler() {
     let { counter } = this.state
     this.setState({
@@ -32,6 +32,18 @@ class Counter extends Component {
     let { counter } = this.state
     this.setState({
       counter: counter - 1
+    })
+  }
+*/
+  clickHandler(operador) {
+    let { counter } = this.state
+    if ( operador === 'add' ) {
+      counter ++
+    } else {
+      counter --
+    }
+    this.setState({
+      counter
     })
   }
 
