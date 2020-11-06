@@ -58,11 +58,12 @@ class Koders extends Component {
 
   render() {
     console.log('Render', this.state.koders)
+    const { koders } = this.state
     return (
       <div>
-        <ul>
-          {this._renderKoders()}
-        </ul>
+        {
+          koders.length ? (<ul>{this._renderKoders()}</ul>) : (<h1>No hay Koders</h1>)
+        }
       </div>
     );
   }
