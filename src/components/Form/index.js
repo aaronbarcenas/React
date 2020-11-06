@@ -4,25 +4,30 @@ class Form extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      input1: ""
+      MXNQuantity: 0,
+      USDQuantity: 0
     }
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(event) {
-    console.log("works!!!", event.target.value)
+  handleChange({ target: { value } }) {
     this.setState({
-      input1: event.target.value
+      MXNQuantity: value,
+      USDQuantity: value / 21.60
     })
   }
 
   render() {
-    const { input1 } = this.state
+    const { MXNQuantity, USDQuantity } = this.state
     return (
       <div>
         <form>
-          <input type="text" value={input1} onChange={this.handleChange}/>
+          <input 
+            type="number" 
+            value={MXNQuantity} 
+            onChange={this.handleChange}/>
         </form>
+        <p>USD: ${USDQuantity}</p>
       </div>
     )
   }
